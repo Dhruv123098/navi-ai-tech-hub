@@ -1,32 +1,52 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Bot, GraduationCap, Briefcase } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
 
 const Hero = () => {
   return (
-    <section className="gradient-hero min-h-screen flex items-center pt-20">
+    <section className="bg-background min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="animate-fade-in">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6">
-              Transform Your Future With{" "}
-              <span className="text-gradient-cyan">NAVI AI TECH</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight mb-6">
+              Transform Your{" "}
+              <br />
+              Future With{" "}
+              <span className="text-primary">NAVI AI TECH</span>
             </h1>
-            <p className="text-lg text-primary-foreground/80 mb-4">
-              Whether it's AI Solutions, Career Guidance, or Industry-Ready Training
+            <p className="text-lg text-muted-foreground mb-4">
+              Whether it's
             </p>
-            <p className="text-primary-foreground/70 mb-8 max-w-lg">
-              At Navi AI Tech, we are committed to delivering excellence through continuous innovation in education and technology. Our tailored curriculum meets diverse learning needs with comprehensive, career-focused experiences.
+            <p className="text-muted-foreground mb-8 max-w-lg">
+              AI Solutions, Career Guidance, or Industry-Ready Training — we provide cutting-edge possibilities to unlock your success.
             </p>
+            
+            {/* Feature Tags */}
+            <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex items-center gap-2 bg-muted rounded-full px-4 py-2">
+                <Bot className="w-4 h-4 text-primary" />
+                <span className="text-sm text-foreground">AI Services</span>
+              </div>
+              <div className="flex items-center gap-2 bg-muted rounded-full px-4 py-2">
+                <GraduationCap className="w-4 h-4 text-primary" />
+                <span className="text-sm text-foreground">Internship Programs</span>
+              </div>
+              <div className="flex items-center gap-2 bg-muted rounded-full px-4 py-2">
+                <Briefcase className="w-4 h-4 text-primary" />
+                <span className="text-sm text-foreground">Career Support</span>
+              </div>
+            </div>
+
             <div className="flex flex-wrap gap-4">
               <Link to="/services">
-                <Button size="lg" className="bg-cyan text-navy font-semibold hover:bg-cyan-light glow-cyan">
+                <Button size="lg" className="bg-primary text-primary-foreground font-semibold hover:bg-primary/90">
                   Explore Services
                 </Button>
               </Link>
               <Link to="/register">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
                   Register Now
                 </Button>
               </Link>

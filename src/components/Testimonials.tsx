@@ -23,7 +23,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
           Testimonials
@@ -35,7 +35,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl p-6 shadow-lg card-hover"
+              className="bg-card rounded-xl p-6 shadow-lg border border-border card-hover"
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">

@@ -1,39 +1,54 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="gradient-navy py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-5 gap-8 mb-12">
           {/* Logo & About */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="NAVI AI TECH" className="h-12 w-auto" />
-              <span className="text-xl font-heading font-bold text-primary-foreground">
-                NAVI AI TECH
-              </span>
+              <img src={logo} alt="NAVI AI TECH" className="h-10 w-auto" />
+              <div>
+                <span className="text-lg font-heading font-bold text-primary-foreground">
+                  NAVI AI TECH
+                </span>
+                <p className="text-xs text-primary-foreground/50">Rule the world with elite</p>
+              </div>
             </div>
-            <p className="text-primary-foreground/70 mb-6 max-w-md">
-              Navi AI Tech empowers students with AI knowledge, internships, and career guidance. We connect learning with real-world innovation to build tomorrow's AI leaders.
+            <p className="text-primary-foreground/70 text-sm mb-6">
+              Navi AI Tech empowers students with AI knowledge, internships, and career guidance.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               <a
                 href="https://www.instagram.com/naviaitech?igsh=NWk1bmZ2OHQ1cWY="
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
+                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
               >
-                <Instagram className="w-5 h-5 text-primary-foreground group-hover:text-navy" />
+                <Instagram className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
               </a>
               <a
                 href="https://www.facebook.com/share/1ASiAnnVYX/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
+                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
               >
-                <Facebook className="w-5 h-5 text-primary-foreground group-hover:text-navy" />
+                <Facebook className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
+              </a>
+              <a
+                href="#"
+                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
+              >
+                <Linkedin className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
+              </a>
+              <a
+                href="#"
+                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
+              >
+                <Twitter className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
               </a>
             </div>
           </div>
@@ -43,7 +58,7 @@ const Footer = () => {
             <h4 className="text-primary-foreground font-heading font-semibold mb-4">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/" className="text-primary-foreground/70 hover:text-cyan transition-colors">
                   Home
@@ -55,13 +70,47 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  Privacy Policy & ToS
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  Terms & Condition
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Courses */}
+          <div>
+            <h4 className="text-primary-foreground font-heading font-semibold mb-4">
+              Courses
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li>
                 <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Services
+                  Web Development
                 </Link>
               </li>
               <li>
-                <Link to="/register" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Register
+                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  AI/ML Developer
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  Data Analytics
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  Data Science
                 </Link>
               </li>
             </ul>
@@ -72,27 +121,40 @@ const Footer = () => {
             <h4 className="text-primary-foreground font-heading font-semibold mb-4">
               Contact
             </h4>
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-cyan" />
-                <a href="mailto:helpnaviaitech@gmail.com" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  helpnaviaitech@gmail.com
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-cyan" />
+                <a href="tel:8317564642" className="text-primary-foreground/70 hover:text-cyan transition-colors">
+                  +91 8317564642
                 </a>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-cyan" />
-                <a href="tel:8317564642" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  8317564642
+              <li className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-cyan" />
+                <a href="mailto:helpnaviaitech@gmail.com" className="text-primary-foreground/70 hover:text-cyan transition-colors text-xs">
+                  helpnaviaitech@gmail.com
                 </a>
               </li>
             </ul>
           </div>
+
+          {/* Location */}
+          <div>
+            <h4 className="text-primary-foreground font-heading font-semibold mb-4">
+              Locations
+            </h4>
+            <p className="text-primary-foreground/70 text-sm">
+              India
+            </p>
+          </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-primary-foreground/10 pt-8 text-center">
+        <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {new Date().getFullYear()} NAVI AI TECH. All Rights Reserved.
+            Navi AI Tech India Pvt. Limited © 2024-2025. All Rights Reserved
+          </p>
+          <p className="text-primary-foreground/50 text-sm">
+            Developed by NAVI AI Tech Team
           </p>
         </div>
       </div>
