@@ -1,34 +1,28 @@
 const companies = [
-  { name: "Tech Mahindra", logo: "TM" },
-  { name: "Accenture", logo: "AC" },
-  { name: "RPA Zone", logo: "RZ" },
-  { name: "Swiggy", logo: "SW" },
-  { name: "Infosys", logo: "IN" },
-  { name: "Zoho", logo: "ZH" },
-  { name: "TCS", logo: "TC" },
+  "TECH MAHINDRA",
+  "ACCENTURE", 
+  "RPA ZONE",
+  "SWIGGY",
+  "INFOSYS",
+  "ZOHO",
+  "TCS",
 ];
 
 const TiedUpCompanies = () => {
   return (
-    <section className="py-16 bg-card">
+    <section className="py-12 bg-card border-y border-border">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
-          Tied Up Companies
-        </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Our students get placement opportunities at top companies
-        </p>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+        <h3 className="text-center text-lg text-muted-foreground mb-8">
+          Our Alumni Works At
+        </h3>
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
           {companies.map((company, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-2 p-4 bg-muted rounded-lg card-hover min-w-[100px]"
+              className="px-6 py-3 rounded-lg bg-muted hover:shadow-md transition-all border border-border"
             >
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground font-bold text-lg">
-                {company.logo}
-              </div>
-              <span className="text-sm font-medium text-foreground text-center">
-                {company.name}
+              <span className="text-sm md:text-base font-semibold text-foreground">
+                {company}
               </span>
             </div>
           ))}

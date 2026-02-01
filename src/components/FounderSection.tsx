@@ -23,7 +23,7 @@ const FounderSection = () => {
               <h3 className="text-2xl font-heading font-bold text-foreground mb-2">
                 Ankarao K.
               </h3>
-              <p className="text-cyan font-medium mb-4">Founder & CEO of Navi AI Tech</p>
+              <p className="text-primary font-medium mb-4">Founder & CEO of Navi AI Tech</p>
               <p className="text-muted-foreground leading-relaxed">
                 Ankarao K. is a visionary leader driven by a deep passion for the AI revolution and next-generation technology services. With a strong belief that artificial intelligence can reshape businesses and empower individuals, he founded Navi AI Tech to bridge the gap between innovation and practical solutions.
               </p>
