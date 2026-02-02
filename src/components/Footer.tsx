@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Footer = () => {
-  return (
-    <footer className="gradient-navy py-16">
+  return <footer className="gradient-navy py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-5 gap-8 mb-12">
           {/* Logo & About */}
@@ -15,39 +13,23 @@ const Footer = () => {
                 <span className="text-lg font-heading font-bold text-primary-foreground">
                   NAVI AI TECH
                 </span>
-                <p className="text-xs text-primary-foreground/50">Rule the world with elite</p>
+                <p className="text-xs text-primary-foreground/50">Rule the world with NAT </p>
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm mb-6">
               Navi AI Tech empowers students with AI knowledge, internships, and career guidance.
             </p>
             <div className="flex gap-3">
-              <a
-                href="https://www.instagram.com/naviaitech?igsh=NWk1bmZ2OHQ1cWY="
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
-              >
+              <a href="https://www.instagram.com/naviaitech?igsh=NWk1bmZ2OHQ1cWY=" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
                 <Instagram className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
               </a>
-              <a
-                href="https://www.facebook.com/share/1ASiAnnVYX/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
-              >
+              <a href="https://www.facebook.com/share/1ASiAnnVYX/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
                 <Facebook className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
               </a>
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
-              >
+              <a href="#" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
                 <Linkedin className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
               </a>
-              <a
-                href="#"
-                className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group"
-              >
+              <a href="#" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
                 <Twitter className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
               </a>
             </div>
@@ -158,8 +140,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
