@@ -1,4 +1,5 @@
 import founderImage from "@/assets/founder.png";
+import { MessageCircle, Linkedin } from "lucide-react";
 
 const FounderSection = () => {
   return (
@@ -16,8 +17,28 @@ const FounderSection = () => {
               <img
                 src={founderImage}
                 alt="Ankarao K., Founder & CEO"
-                className="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover shadow-xl"
+                className="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover shadow-xl mb-4"
               />
+              <div className="flex gap-4 justify-center">
+                <a
+                  href="https://wa.me/918317564642"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  WhatsApp
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ankarao-kolakaluri-7820823a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  LinkedIn
+                </a>
+              </div>
             </div>
             <div>
               <h3 className="text-2xl font-heading font-bold text-foreground mb-2">

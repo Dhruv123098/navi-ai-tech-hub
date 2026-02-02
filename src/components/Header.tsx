@@ -13,7 +13,7 @@ const Header = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Contact", path: "/#contact" },
+    { name: "Contact", path: "/register" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -48,7 +48,7 @@ const Header = () => {
                 >
                   NAVI AI TECH
                 </motion.span>
-                <p className="text-xs text-muted-foreground">Rule the world with elite</p>
+                <p className="text-xs text-muted-foreground">Rule the world with <b>NAT</b></p>
               </div>
             </Link>
           </motion.div>
