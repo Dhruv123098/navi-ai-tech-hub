@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo.png";
@@ -89,13 +89,27 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* CTA Buttons */}
           <motion.div 
-            className="hidden md:block"
+            className="hidden md:flex items-center gap-3"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5 }}
           >
+            {/* WhatsApp Button */}
+            <motion.a
+              href="https://wa.me/918317564642"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span className="font-semibold">WhatsApp</span>
+            </motion.a>
+            
+            {/* Register Button */}
             <Link to="/register">
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -171,6 +185,25 @@ const Header = () => {
                   </Link>
                 </motion.div>
               ))}
+              {/* WhatsApp Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="px-4"
+              >
+                <a
+                  href="https://wa.me/918317564642"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-green-500 text-white px-4 py-3 rounded-full hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  <span className="font-semibold">WhatsApp</span>
+                </a>
+              </motion.div>
+              
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -178,7 +211,7 @@ const Header = () => {
                 className="px-4"
               >
                 <Link to="/register" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full mt-4 bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-full">
+                  <Button className="w-full bg-primary text-primary-foreground font-semibold hover:bg-primary/90 rounded-full shadow-lg hover:shadow-xl">
                     Register
                   </Button>
                 </Link>
