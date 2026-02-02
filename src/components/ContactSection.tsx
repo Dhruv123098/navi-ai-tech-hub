@@ -63,7 +63,7 @@ const ContactSection = () => {
                         Navi AI Tech Headquarters
                       </h4>
                       <p className="text-muted-foreground leading-relaxed">
-                        Hunayath Nagar, Hyderabad<br />
+                        Himayath Nagar, Hyderabad<br />
                         Telangana, India - 5000XX
                       </p>
                       <div className="mt-3 flex flex-col sm:flex-row gap-3">
@@ -77,11 +77,11 @@ const ContactSection = () => {
                           +91 83175 64642
                         </a>
                         <a
-                          href="mailto:info@naviaitech.com"
+                          href="mailto:helpnaviaitech@gmail.com"
                           className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors"
                         >
                           <Mail className="w-4 h-4" />
-                          info@naviaitech.com
+                          helpnaviaitech@gmail.com
                         </a>
                       </div>
                     </div>
@@ -91,7 +91,7 @@ const ContactSection = () => {
                 {/* Quick Actions */}
                 <div className="grid grid-cols-2 gap-3">
                   <button
-                    onClick={() => window.open('https://maps.google.com/?q=Hunayath+Nagar+Hyderabad', '_blank')}
+                    onClick={() => window.open('https://maps.google.com/?q=Himayath+Nagar+Hyderabad', '_blank')}
                     className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm"
                   >
                     <MapPin className="w-4 h-4" />
