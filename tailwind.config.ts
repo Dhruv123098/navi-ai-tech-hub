@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        heading: ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -57,7 +57,11 @@ export default {
         },
         cyan: {
           DEFAULT: "hsl(var(--cyan))",
-          light: "hsl(var(--cyan-light))",
+          glow: "hsl(var(--cyan-glow))",
+        },
+        purple: {
+          DEFAULT: "hsl(var(--purple))",
+          glow: "hsl(var(--purple-glow))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

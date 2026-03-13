@@ -1,145 +1,101 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+
 const Footer = () => {
-  return <footer className="gradient-navy py-16">
+  return (
+    <footer className="gradient-navy py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-5 gap-8 mb-12">
-          {/* Logo & About */}
-          <div className="md:col-span-1">
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
+          {/* Company Info */}
+          <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="NAVI AI TECH" className="h-10 w-auto" />
+              <img src="/lovable-uploads/c83ed365-aaec-456a-9100-b830a205b098.jpg" alt="Navi AI Technologies" className="h-10 w-auto rounded-lg" />
               <div>
-                <span className="text-lg font-heading font-bold text-primary-foreground">
+                <span className="text-lg font-heading font-bold text-white">
                   NAVI AI TECH
                 </span>
-                <p className="text-xs text-primary-foreground/50">Rule the world with NAT </p>
+                <p className="text-xs text-white/50">AI Automation Company</p>
               </div>
             </div>
-            <p className="text-primary-foreground/70 text-sm mb-6">
-              Navi AI Tech empowers students with AI knowledge, internships, and career guidance.
+            <p className="text-white/60 text-sm mb-6">
+              Navi AI Technologies provides AI automation, chatbots, voice bots, and intelligent business solutions.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.instagram.com/naviaitech?igsh=NWk1bmZ2OHQ1cWY=" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
-                <Instagram className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
+              <a href="https://www.instagram.com/naviaitech" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+                <Instagram className="w-4 h-4 text-white" />
               </a>
-              <a href="https://www.facebook.com/share/1ASiAnnVYX/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
-                <Facebook className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
+              <a href="https://www.facebook.com/share/1ASiAnnVYX/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+                <Facebook className="w-4 h-4 text-white" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
-                <Linkedin className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
+              <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+                <Linkedin className="w-4 h-4 text-white" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-cyan transition-colors group">
-                <Twitter className="w-4 h-4 text-primary-foreground group-hover:text-navy" />
+              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors">
+                <Twitter className="w-4 h-4 text-white" />
               </a>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Services Links */}
           <div>
-            <h4 className="text-primary-foreground font-heading font-semibold mb-4">
-              Quick Links
-            </h4>
+            <h4 className="text-white font-heading font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Privacy Policy & ToS
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Terms & Condition
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Blog
-                </a>
-              </li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary transition-colors">AI Chatbot Development</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary transition-colors">AI Voice Bot</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary transition-colors">Business Automation</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary transition-colors">WhatsApp Automation</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary transition-colors">AI Internships</Link></li>
             </ul>
           </div>
 
-          {/* Courses */}
+          {/* Company Links */}
           <div>
-            <h4 className="text-primary-foreground font-heading font-semibold mb-4">
-              Courses
-            </h4>
+            <h4 className="text-white font-heading font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  AI/ML Developer
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Data Analytics
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  Data Science
-                </Link>
-              </li>
+              <li><Link to="/" className="text-white/60 hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-white/60 hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary transition-colors">Services</Link></li>
+              <li><Link to="/register" className="text-white/60 hover:text-primary transition-colors">Contact</Link></li>
+              <li><a href="#" className="text-white/60 hover:text-primary transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-primary-foreground font-heading font-semibold mb-4">
-              Contact
-            </h4>
+            <h4 className="text-white font-heading font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-cyan" />
-                <a href="tel:8317564642" className="text-primary-foreground/70 hover:text-cyan transition-colors">
-                  +91 8317564642
-                </a>
+              <li className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                <span className="text-white/60">
+                  Manjeera Corporate, KPHB<br />
+                  Kukatpally, Hyderabad<br />
+                  Telangana - 500072
+                </span>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-cyan" />
-                <a href="mailto:helpnaviaitech@gmail.com" className="text-primary-foreground/70 hover:text-cyan transition-colors text-xs">
-                  helpnaviaitech@gmail.com
-                </a>
+                <Phone className="w-4 h-4 text-primary" />
+                <a href="tel:8317564642" className="text-white/60 hover:text-primary transition-colors">+91 83175 64642</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-primary" />
+                <a href="mailto:helpnaviaitech@gmail.com" className="text-white/60 hover:text-primary transition-colors text-xs">helpnaviaitech@gmail.com</a>
               </li>
             </ul>
-          </div>
-
-          {/* Location */}
-          <div>
-            <h4 className="text-primary-foreground font-heading font-semibold mb-4">
-              Locations
-            </h4>
-            <p className="text-primary-foreground/70 text-sm">
-              India
-            </p>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-primary-foreground/50 text-sm">
-            Navi AI Tech India Pvt. Limited © 2024-2025. All Rights Reserved
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/40 text-sm">
+            © 2026 Navi AI Technologies. All Rights Reserved.
           </p>
-          <p className="text-primary-foreground/50 text-sm">
-            Developed by NAVI AI Tech Team
+          <p className="text-white/40 text-sm">
+            Developed by Navi AI Technologies
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 export default Footer;
